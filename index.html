@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="CYBERNEXUS: aprende ciberseguridad con herramientas y retos interactivos.">
+  <title>CYBERNEXUS | Ciberseguridad</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#inicio">⬡ CYBER<span>NEXUS</span></a>
+    <button id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav id="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#laboratorio">Laboratorio</a>
+      <a href="#retos">Retos</a>
+      <a href="#aprende">Aprende</a>
+    </nav>
+    <a class="header-button" href="#laboratorio">Explorar ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> CENTRO DE SEGURIDAD DIGITAL</p>
+        <h1>El futuro digital<br>necesita <span>protección.</span></h1>
+        <p class="description">Explora el mundo de la ciberseguridad, aprende a proteger tus datos y demuestra tus conocimientos con herramientas y retos interactivos.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#laboratorio">Entrar al laboratorio ↗</a>
+          <a class="btn secondary" href="#retos">Probar un reto</a>
+        </div>
+        <p class="hero-note">✦ Aprende haciendo. Navega con seguridad.</p>
+      </div>
+
+      <div class="hero-art">
+        <div class="orbit orbit1"></div>
+        <div class="orbit orbit2"></div>
+        <div class="shield">🛡️</div>
+        <div class="floating-card card-one">🟢 <span>Protección digital<br><b>Hábitos seguros</b></span></div>
+        <div class="floating-card card-two">🔐 <span>Privacidad<br><b>Datos protegidos</b></span></div>
+        <div class="art-label"><span class="dot"></span> ENTORNO DEMOSTRATIVO</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><span>⌘</span><b>Redes</b><small>Conexiones seguras</small></div>
+      <div><span>◇</span><b>Privacidad</b><small>Cuida tus datos</small></div>
+      <div><span>⛨</span><b>Protección</b><small>Mejores hábitos</small></div>
+      <div><span>✳</span><b>Aprendizaje</b><small>Retos prácticos</small></div>
+    </section>
+
+    <section class="section" id="laboratorio">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / HERRAMIENTAS</p><h2>Tu <span>laboratorio digital</span></h2></div>
+        <p>Experimenta con estas herramientas educativas directamente en tu navegador.</p>
+      </div>
+
+      <div class="tools">
+        <article class="panel">
+          <div class="panel-label">HERRAMIENTA 01 · SEGURIDAD</div>
+          <h3>🔐 Verificador de contraseña</h3>
+          <p>Prueba una contraseña de ejemplo y recibe consejos para mejorarla.</p>
+          <label for="password">Contraseña de prueba</label>
+          <div class="password-box">
+            <input id="password" type="password" placeholder="Escribe una contraseña..." autocomplete="off">
+            <button id="showPassword" type="button">◉</button>
+          </div>
+          <div class="strength"><span>FORTALEZA ESTIMADA</span><b id="strengthText">Sin evaluar</b></div>
+          <div class="bar"><span id="strengthBar"></span></div>
+          <ul class="checklist">
+            <li id="checkLength">○ 12 caracteres o más</li>
+            <li id="checkCase">○ Mayúsculas y minúsculas</li>
+            <li id="checkNumber">○ Incluye números</li>
+            <li id="checkSymbol">○ Incluye símbolos</li>
+          </ul>
+          <p class="note">ⓘ No introduzcas contraseñas reales. El análisis se realiza en esta página.</p>
+        </article>
+
+        <article class="panel">
+          <div class="panel-label">HERRAMIENTA 02 · GENERADOR</div>
+          <h3>✳ Generador de contraseñas</h3>
+          <p>Genera una combinación aleatoria para usar como ejemplo.</p>
+          <div class="generated" id="generated">N3x!7Qv@2Lp#</div>
+          <label class="range-label" for="length">Longitud: <b id="lengthText">14</b></label>
+          <input id="length" type="range" min="10" max="24" value="14">
+          <div class="characters"><span>ABC</span><span>abc</span><span>123</span><span>#!?</span></div>
+          <div class="generator-actions">
+            <button class="btn primary" id="generate" type="button">↻ Generar contraseña</button>
+            <button class="btn secondary copy" id="copy" type="button">Copiar</button>
+          </div>
+          <p class="note" id="copyMessage">✓ La contraseña se genera en tu navegador.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="retos">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / ENTRENAMIENTO</p><h2>¿Detectas el <span>riesgo?</span></h2></div>
+        <p>Aprende a reconocer señales de posibles engaños digitales.</p>
+      </div>
+
+      <div class="challenge panel">
+        <div>
+          <span class="challenge-tag">● RETO INTERACTIVO</span>
+          <h3>Un mensaje inesperado</h3>
+          <p>Recibes este correo. ¿Qué harías primero?</p>
+          <div class="email">
+            <div class="email-top">● ● ● <span>MENSAJE DE EJEMPLO</span></div>
+            <div class="sender"><div class="sender-icon">?</div><div><b>Soporte de cuenta</b><small>seguridad@cuenta-alerta.example</small></div></div>
+            <h4>Tu cuenta será bloqueada hoy</h4>
+            <p>Detectamos un problema. Confirma tus datos inmediatamente para evitar restricciones.</p>
+            <div class="fake-link">Verificar mi cuenta ahora →</div>
+            <div class="warning">⚠ Correo ficticio para aprendizaje. No existe un enlace real.</div>
+          </div>
+        </div>
+        <div class="answers">
+          <p class="panel-label">ELIGE UNA RESPUESTA</p>
+          <button class="answer" data-correct="false"><b>A</b><span>Hacer clic rápido para evitar el bloqueo.</span><strong>↗</strong></button>
+          <button class="answer" data-correct="true"><b>B</b><span>Verificar el remitente y entrar al sitio oficial por mi cuenta.</span><strong>↗</strong></button>
+          <button class="answer" data-correct="false"><b>C</b><span>Responder con mi contraseña para confirmar mi identidad.</span><strong>↗</strong></button>
+          <p id="feedback" aria-live="polite" class="feedback">Pista: desconfía de la urgencia y nunca compartas tu contraseña por correo.</p>
+          <button class="reset" id="reset" type="button">↻ Volver a intentar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="aprende">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / CONOCIMIENTO</p><h2>Explora el <span>ciberespacio</span></h2></div>
+        <p>Pequeños hábitos pueden ayudarte a cuidar tu información.</p>
+      </div>
+      <div class="learning">
+        <article class="learn-card">
+          <div class="learn-icon">🔑</div><small>01 / ACCESO</small>
+          <h3>Contraseñas seguras</h3>
+          <p>Utiliza contraseñas largas y diferentes para cada cuenta. Un gestor puede ayudarte a organizarlas.</p>
+          <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">Aprender más ↗</a>
+        </article>
+        <article class="learn-card">
+          <div class="learn-icon">✉️</div><small>02 / PREVENCIÓN</small>
+          <h3>Detecta el phishing</h3>
+          <p>Revisa el remitente, desconfía de mensajes urgentes y confirma las solicitudes por otro canal.</p>
+          <a href="https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams" target="_blank" rel="noopener noreferrer">Aprender más ↗</a>
+        </article>
+        <article class="learn-card">
+          <div class="learn-icon">🛡️</div><small>03 / PROTECCIÓN</small>
+          <h3>Cuida tus dispositivos</h3>
+          <p>Mantén tus dispositivos actualizados y activa la autenticación multifactor cuando esté disponible.</p>
+          <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">Aprender más ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="final">
+      <p class="eyebrow">TU SEGURIDAD EMPIEZA CONTIGO</p>
+      <h2>Piensa antes de hacer clic.</h2>
+      <p>Aprende, practica y comparte buenos hábitos digitales.</p>
+      <a class="btn primary" href="#inicio">Volver al inicio ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#inicio">⬡ CYBER<span>NEXUS</span></a>
+    <p>Proyecto educativo de exploración de ciberseguridad.</p>
+    <small>© <span id="year"></span> CYBERNEXUS · Sitio demostrativo.</small>
+  </footer>
+</body>
+</html>
